@@ -686,58 +686,59 @@
 
           <!-- Right Column: Live Multi-Element 3D Orbit Composition (7 Cols on Desktop) -->
           <div class="lg:col-span-7 relative flex items-center justify-center">
-            <div id="hero-3d-interactive-stage" class="orbit-scene relative mx-auto w-full max-w-[640px] h-[390px] sm:h-[490px] flex items-center justify-center select-none">
+            <div id="hero-3d-interactive-stage" class="orbit-scene relative mx-auto w-full max-w-[660px] h-[400px] sm:h-[500px] flex items-center justify-center select-none">
 
-              <!-- Ambient Studio Backlights Integrated into Scene Space -->
-              <div class="pointer-events-none absolute w-[310px] sm:w-[440px] h-[240px] sm:h-[330px] rounded-full bg-[#D89B78]/20 blur-[70px]"></div>
-              <div class="pointer-events-none absolute w-[220px] sm:w-[320px] h-[180px] sm:h-[240px] rounded-full bg-[#E9D4BC]/12 blur-[48px] -translate-x-8 translate-y-6"></div>
+              <div class="pointer-events-none absolute w-[340px] sm:w-[460px] h-[250px] sm:h-[340px] rounded-full bg-[#BD916F]/25 blur-[75px]"></div>
+              <div class="pointer-events-none absolute w-[240px] sm:w-[340px] h-[190px] sm:h-[260px] rounded-full bg-[#f3f0e6]/12 blur-[52px] -translate-x-12 translate-y-10"></div>
 
-              <!-- 3D Camera Rig (Responds to subtle pointer parallax) -->
               <div id="orbit-camera-rig" class="orbit-camera-rig">
 
-                <!-- 3D Orbital Track Plane 1 (Primary Illuminated Champagne-Gold Elliptical Ring) -->
                 <div class="orbit-track-plane-1">
-                  <svg class="w-full h-full overflow-visible" viewBox="0 0 700 500" fill="none">
+                  <svg class="w-full h-full overflow-visible" viewBox="0 0 720 520" fill="none">
                     <defs>
-                      <linearGradient id="orbitGoldGrad1" x1="40" y1="260" x2="650" y2="210" gradientUnits="userSpaceOnUse">
-                        <stop offset="0%" stop-color="#FFF3E2" stop-opacity="0.88" />
-                        <stop offset="22%" stop-color="#E9D4BC" stop-opacity="0.52" />
-                        <stop offset="55%" stop-color="#D89B78" stop-opacity="0.16" />
-                        <stop offset="85%" stop-color="#E9D4BC" stop-opacity="0.45" />
-                        <stop offset="100%" stop-color="#FFF3E2" stop-opacity="0.75" />
+                      <linearGradient id="orbitGoldGrad1" x1="30" y1="270" x2="670" y2="210" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#FFF5E6" stop-opacity="0.92" />
+                        <stop offset="24%" stop-color="#E9D4BC" stop-opacity="0.58" />
+                        <stop offset="56%" stop-color="#BD916F" stop-opacity="0.16" />
+                        <stop offset="86%" stop-color="#E9D4BC" stop-opacity="0.48" />
+                        <stop offset="100%" stop-color="#FFF5E6" stop-opacity="0.82" />
                       </linearGradient>
                       <filter id="orbitGlow" x="-20%" y="-20%" width="140%" height="140%">
-                        <feGaussianBlur stdDeviation="3.5" result="blur" />
+                        <feGaussianBlur stdDeviation="3.2" result="blur" />
                         <feComposite in="SourceGraphic" in2="blur" operator="over" />
                       </filter>
                     </defs>
-                    <ellipse cx="348" cy="256" rx="305" ry="164" stroke="url(#orbitGoldGrad1)" stroke-width="1.6" filter="url(#orbitGlow)" />
-                    <!-- Bright Left Rim Specular Arc (Matches bright curve near Netflix 'N' card in reference) -->
-                    <path d="M 92 166 A 305 164 0 0 0 88 342" stroke="#FFF6EA" stroke-width="2.4" stroke-linecap="round" opacity="0.85" filter="url(#orbitGlow)" />
+                    <ellipse cx="358" cy="262" rx="314" ry="168" stroke="url(#orbitGoldGrad1)" stroke-width="1.6" filter="url(#orbitGlow)" />
+                    <path d="M 88 174 A 314 168 0 0 0 84 348" stroke="#FFF8EE" stroke-width="2.6" stroke-linecap="round" opacity="0.9" filter="url(#orbitGlow)" />
+                    <circle cx="72" cy="225" r="2.2" fill="#FFF8EE" opacity="0.8" />
+                    <circle cx="145" cy="122" r="1.8" fill="#E9D4BC" opacity="0.65" />
+                    <circle cx="515" cy="402" r="2.4" fill="#FFF5E6" opacity="0.75" filter="url(#orbitGlow)" />
+                    <circle cx="595" cy="365" r="1.6" fill="#E9D4BC" opacity="0.55" />
                   </svg>
                 </div>
 
-                <!-- 3D Orbital Track Plane 2 (Secondary Intersecting Orbital Ring) -->
                 <div class="orbit-track-plane-2">
-                  <svg class="w-full h-full overflow-visible" viewBox="0 0 700 500" fill="none">
+                  <svg class="w-full h-full overflow-visible" viewBox="0 0 720 520" fill="none">
                     <defs>
-                      <linearGradient id="orbitGoldGrad2" x1="120" y1="90" x2="580" y2="420" gradientUnits="userSpaceOnUse">
-                        <stop offset="0%" stop-color="#E9D4BC" stop-opacity="0.48" />
-                        <stop offset="50%" stop-color="#D89B78" stop-opacity="0.12" />
-                        <stop offset="100%" stop-color="#E9D4BC" stop-opacity="0.52" />
+                      <linearGradient id="orbitGoldGrad2" x1="110" y1="90" x2="600" y2="430" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#E9D4BC" stop-opacity="0.46" />
+                        <stop offset="50%" stop-color="#BD916F" stop-opacity="0.12" />
+                        <stop offset="100%" stop-color="#E9D4BC" stop-opacity="0.56" />
                       </linearGradient>
                     </defs>
-                    <ellipse cx="356" cy="248" rx="255" ry="142" stroke="url(#orbitGoldGrad2)" stroke-width="1.25" stroke-dasharray="6 3" />
+                    <ellipse cx="368" cy="254" rx="266" ry="148" stroke="url(#orbitGoldGrad2)" stroke-width="1.2" />
+                    <circle cx="622" cy="212" r="2" fill="#E9D4BC" opacity="0.7" />
                   </svg>
                 </div>
 
-                <!-- Backdrop Depth Element: Upper Champagne-Rose 3D Slab Tucked Behind Monolith Top Edge (Matches Reference) -->
                 <div
                   aria-hidden="true"
-                  style="top: 19%; left: 50%; --tz: -14px; --rx: 28deg; --ry: -14deg; --rz: -19deg; transform: translate3d(0,0,-14px) rotateX(28deg) rotateY(-14deg) rotateZ(-19deg);"
-                  class="card-3d-unit mat-champagne-gold w-14 h-14 sm:w-[74px] sm:h-[74px] pointer-events-none z-10"
+                  style="top: 17%; left: 50%; --tz: -14px; --ex: -1px; --ey: 2px; transform: translate3d(0,0,-14px) rotateX(32deg) rotateY(-15deg) rotateZ(-22deg);"
+                  class="card-3d-unit mat-champagne-gold w-14 h-14 sm:w-[76px] sm:h-[76px] pointer-events-none z-10"
                 >
                   <div class="card-3d-inner">
+                    <div class="card-3d-side s5"></div>
+                    <div class="card-3d-side s4"></div>
                     <div class="card-3d-side s3"></div>
                     <div class="card-3d-side s2"></div>
                     <div class="card-3d-side s1"></div>
@@ -747,9 +748,6 @@
                   </div>
                 </div>
 
-                <!-- ===================================================================
-                     A. CENTRAL ORBIT'S UNIVERSE 3D MONOLITH CARD (Independently Rendered)
-                     =================================================================== -->
                 <div
                   id="hero-monolith-card"
                   data-route="catalog"
@@ -758,63 +756,54 @@
                   aria-label="Orbit's Universe — Explore Catalog"
                   class="orbit-monolith-wrapper cursor-pointer group"
                 >
-                  <!-- Deep Studio Floor Contact Shadow -->
                   <div class="monolith-contact-shadow"></div>
-                  <!-- 5-Layer Extruded 3D Metallic/Obsidian Chassis (True Physical Thickness) -->
+                  <div class="monolith-warm-underglow"></div>
+                  <div class="monolith-extrude depth-6"></div>
                   <div class="monolith-extrude depth-5"></div>
                   <div class="monolith-extrude depth-4"></div>
                   <div class="monolith-extrude depth-3"></div>
                   <div class="monolith-extrude depth-2"></div>
                   <div class="monolith-extrude depth-1"></div>
 
-                  <!-- Top Illuminated Obsidian-Glass Face -->
                   <div class="monolith-face flex flex-col items-center justify-center p-6 text-center">
                     <div class="monolith-specular-sheen"></div>
-                    <!-- Ambient Occlusion Shadows from Overlapping Cards -->
                     <div class="monolith-ao-topleft"></div>
                     <div class="monolith-ao-topright"></div>
                     <div class="monolith-ao-bottomleft"></div>
 
-                    <!-- Top Bevel Specular Highlight Line -->
-                    <div class="absolute inset-x-8 top-0 h-[1.5px] bg-gradient-to-r from-transparent via-[#FFF5E8]/70 to-transparent"></div>
-                    <!-- Left Bevel Warm Rim Light -->
-                    <div class="absolute inset-y-8 left-0 w-[1.5px] bg-gradient-to-b from-[#FFF5E8]/55 via-[#D89B78]/35 to-transparent"></div>
+                    <div class="absolute inset-x-10 top-0 h-[1.5px] bg-gradient-to-r from-transparent via-[#FFF8EE]/75 to-transparent"></div>
+                    <div class="absolute inset-y-8 left-0 w-[1.8px] bg-gradient-to-b from-[#FFF8EE]/65 via-[#BD916F]/45 to-transparent"></div>
 
-                    <!-- Embossed Central Brand Typography -->
                     <div class="relative z-10 transform translate-z-2">
-                      <span class="block text-[21px] sm:text-[28px] font-display tracking-[-0.02em] text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.75)]">
-                        <strong class="font-semibold text-white">Orbit's</strong> <span class="font-light text-[#F5F2EC]/90">Universe</span>
+                      <span class="block text-[22px] sm:text-[30px] font-display tracking-[-0.025em] text-white drop-shadow-[0_4px_14px_rgba(0,0,0,0.85)]">
+                        <strong class="font-semibold text-white">Orbit's</strong> <span class="font-light text-[#f3f0e6]/90">Universe</span>
                       </span>
-                      <span id="monolith-caption" class="mt-1.5 block text-[11px] sm:text-[13px] tracking-[0.02em] text-[#D8C7B4]/85 font-normal">
+                      <span id="monolith-caption" class="mt-1.5 block text-[11px] sm:text-[13px] tracking-[0.03em] text-[#E9D4BC]/85 font-normal">
                         More Access. More Possibilities.
                       </span>
+                      <div class="mt-2.5 mx-auto w-24 h-[1px] bg-gradient-to-r from-transparent via-[#E9D4BC]/45 to-transparent"></div>
                     </div>
                   </div>
                 </div>
 
-                <!-- ===================================================================
-                     B. INDEPENDENT FLOATING 3D PRODUCT CARDS (7 Interactive + 1 Accent)
-                     Each card has its own 3D position, rotation, extruded slab depth,
-                     specular lighting, contact shadow, and smooth floating animation.
-                     =================================================================== -->
-
-                <!-- Card 1 (Top-Left): Audio & Music Streaming (Spotify-inspired Emerald Wave 3D Slab) -->
                 <button
                   type="button"
                   data-filter-cat="cat-entertainment"
                   aria-label="Entertainment &amp; Audio"
-                  style="top: 11%; left: 26%; --tz: 38px; --rx: 24deg; --ry: 18deg; --rz: -18deg;"
-                  class="card-3d-unit mat-obsidian-emerald float-3d-a w-[68px] h-[68px] sm:w-[88px] sm:h-[88px] z-30"
-                 data-badge="Music &amp; Audio">
+                  style="top: 10%; left: 26%; --tz: 42px; --rx: 24deg; --ry: 20deg; --rz: -18deg; --ex: -1.4px; --ey: 2px;"
+                  class="card-3d-unit mat-obsidian-emerald float-3d-a w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] z-30"
+                  data-badge="Music &amp; Audio"
+                >
                   <div class="card-3d-inner">
                     <div class="card-3d-shadow"></div>
+                    <div class="card-3d-side s5"></div>
+                    <div class="card-3d-side s4"></div>
                     <div class="card-3d-side s3"></div>
                     <div class="card-3d-side s2"></div>
                     <div class="card-3d-side s1"></div>
                     <div class="card-3d-face">
                       <div class="card-3d-glint"></div>
-                      <!-- 3D Sculpted Emerald Soundwave Disc -->
-                      <svg class="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-[0_6px_12px_rgba(16,185,129,0.35)]" viewBox="0 0 48 48" fill="none">
+                      <svg class="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-[0_6px_12px_rgba(16,185,129,0.4)]" viewBox="0 0 48 48" fill="none">
                         <defs>
                           <radialGradient id="emeraldDisc" cx="30%" cy="25%" r="75%">
                             <stop offset="0%" stop-color="#34D399" />
@@ -823,32 +812,32 @@
                           </radialGradient>
                         </defs>
                         <circle cx="24" cy="24" r="18" fill="url(#emeraldDisc)" />
-                        <path d="M14.5 20.2C20.2 18.2 28.4 18.5 33.8 21.4" stroke="#08120E" stroke-width="3.2" stroke-linecap="round" />
-                        <path d="M16.2 25.4C20.8 23.8 27.4 24.1 31.8 26.5" stroke="#08120E" stroke-width="2.8" stroke-linecap="round" />
-                        <path d="M18.2 30.2C21.8 29.0 26.4 29.2 29.6 31.0" stroke="#08120E" stroke-width="2.4" stroke-linecap="round" />
+                        <path d="M14.5 20.2C20.2 18.2 28.4 18.5 33.8 21.4" stroke="#07120E" stroke-width="3.2" stroke-linecap="round" />
+                        <path d="M16.2 25.4C20.8 23.8 27.4 24.1 31.8 26.5" stroke="#07120E" stroke-width="2.8" stroke-linecap="round" />
+                        <path d="M18.2 30.2C21.8 29.0 26.4 29.2 29.6 31.0" stroke="#07120E" stroke-width="2.4" stroke-linecap="round" />
                       </svg>
                     </div>
-                    
                   </div>
                 </button>
 
-                <!-- Card 2 (Top-Right): Creative & Design Suite (Sculpted Multi-Color Prism 'A' 3D Slab) -->
                 <button
                   type="button"
                   data-filter-cat="cat-creativity"
                   aria-label="Creativity &amp; Design"
-                  style="top: 2%; right: 18%; --tz: 52px; --rx: 20deg; --ry: -18deg; --rz: -14deg;"
-                  class="card-3d-unit mat-obsidian-prism float-3d-b w-[76px] h-[76px] sm:w-[98px] sm:h-[98px] z-30"
-                 data-badge="Creativity &amp; Design">
+                  style="top: 2%; right: 17%; --tz: 54px; --rx: 20deg; --ry: -18deg; --rz: -13deg; --ex: 1.3px; --ey: 2px;"
+                  class="card-3d-unit mat-obsidian-prism float-3d-b w-[78px] h-[78px] sm:w-[100px] sm:h-[100px] z-30"
+                  data-badge="Creativity &amp; Design"
+                >
                   <div class="card-3d-inner">
                     <div class="card-3d-shadow"></div>
+                    <div class="card-3d-side s5"></div>
+                    <div class="card-3d-side s4"></div>
                     <div class="card-3d-side s3"></div>
                     <div class="card-3d-side s2"></div>
                     <div class="card-3d-side s1"></div>
                     <div class="card-3d-face">
                       <div class="card-3d-glint"></div>
-                      <!-- 3D Beveled Multi-Spectrum 'A' Emblem (Matches Reference Top-Right Card) -->
-                      <svg class="w-11 h-11 sm:w-14 sm:h-14 drop-shadow-[0_8px_16px_rgba(0,0,0,0.65)]" viewBox="0 0 56 56" fill="none">
+                      <svg class="w-11 h-11 sm:w-14 sm:h-14 drop-shadow-[0_8px_16px_rgba(0,0,0,0.7)]" viewBox="0 0 56 56" fill="none">
                         <defs>
                           <linearGradient id="prismGrad" x1="10" y1="10" x2="46" y2="46" gradientUnits="userSpaceOnUse">
                             <stop offset="0%" stop-color="#FF5E62" />
@@ -866,153 +855,154 @@
                             <stop offset="100%" stop-color="#6C5CE7" />
                           </linearGradient>
                         </defs>
-                        <!-- Right Wing -->
                         <path d="M28 9L45 43C45.8 44.5 44.7 46.2 43 46.2H35.5C34.3 46.2 33.3 45.5 32.8 44.4L24.5 26.5L28 9Z" fill="url(#prismGrad)" />
-                        <!-- Crossbar Ribbon -->
                         <path d="M18.5 36.5H37.5L41 44.2C41.4 45.3 40.6 46.2 39.4 46.2H22.5L18.5 36.5Z" fill="url(#prismCross)" />
-                        <!-- Left Illuminated Leg -->
                         <path d="M28 9C26.7 9 25.6 9.7 25 10.9L11 43C10.2 44.5 11.3 46.2 13 46.2H20.2C21.4 46.2 22.5 45.5 23 44.4L32.2 23.5L28 9Z" fill="url(#prismLeftLeg)" />
                       </svg>
                     </div>
-                    
                   </div>
                 </button>
 
-                <!-- Card 3 (Mid-Left): 4K Cinema Streaming (Crimson 3D 'N' Ribbon Slab inside Orbital Track) -->
                 <button
                   type="button"
                   data-filter-cat="cat-entertainment"
                   aria-label="Cinema Streaming"
-                  style="top: 32%; left: 5%; --tz: 30px; --rx: 26deg; --ry: 24deg; --rz: -15deg;"
-                  class="card-3d-unit mat-obsidian-crimson float-3d-c w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] z-30"
-                 data-badge="4K Cinema">
+                  style="top: 32%; left: 7%; --tz: 34px; --rx: 28deg; --ry: 24deg; --rz: -16deg; --ex: -1.5px; --ey: 2px;"
+                  class="card-3d-unit mat-obsidian-crimson float-3d-c w-[72px] h-[72px] sm:w-[92px] sm:h-[92px] z-30"
+                  data-badge="4K Cinema"
+                >
                   <div class="card-3d-inner">
                     <div class="card-3d-shadow"></div>
+                    <div class="card-3d-side s5"></div>
+                    <div class="card-3d-side s4"></div>
                     <div class="card-3d-side s3"></div>
                     <div class="card-3d-side s2"></div>
                     <div class="card-3d-side s1"></div>
                     <div class="card-3d-face">
                       <div class="card-3d-glint"></div>
                       <span class="sr-only">4K</span>
-                      <!-- Sculpted 3D Crimson 'N' Ribbon Emblem -->
-                      <svg class="w-9 h-9 sm:w-11 sm:h-11 drop-shadow-[0_6px_14px_rgba(229,9,20,0.45)]" viewBox="0 0 48 48" fill="none">
+                      <svg class="w-9 h-9 sm:w-11 sm:h-11 drop-shadow-[0_6px_14px_rgba(229,9,20,0.5)]" viewBox="0 0 48 48" fill="none">
                         <rect x="12" y="9" width="6.5" height="30" rx="1.2" fill="#B80710" />
                         <rect x="29.5" y="9" width="6.5" height="30" rx="1.2" fill="#B80710" />
                         <path d="M12 9H18.8L36 39H29.2L12 9Z" fill="#FF1E27" />
                       </svg>
                     </div>
-                    
                   </div>
                 </button>
 
-                <!-- Card 4 (Mid-Right): Learning & Courses (Satin Indigo-Violet 3D Slab with Graduation Cap) -->
                 <button
                   type="button"
                   data-filter-cat="cat-learning"
                   aria-label="Learning"
-                  style="top: 21%; right: 5%; --tz: 36px; --rx: 25deg; --ry: -22deg; --rz: -14deg;"
-                  class="card-3d-unit mat-satin-indigo float-3d-d w-[68px] h-[68px] sm:w-[86px] sm:h-[86px] z-30"
-                 data-badge="Learning &amp; Skills">
+                  style="top: 21%; right: 5%; --tz: 38px; --rx: 26deg; --ry: -22deg; --rz: -14deg; --ex: 1.4px; --ey: 2px;"
+                  class="card-3d-unit mat-satin-indigo float-3d-d w-[68px] h-[68px] sm:w-[88px] sm:h-[88px] z-30"
+                  data-badge="Learning &amp; Skills"
+                >
                   <div class="card-3d-inner">
                     <div class="card-3d-shadow"></div>
+                    <div class="card-3d-side s5"></div>
+                    <div class="card-3d-side s4"></div>
                     <div class="card-3d-side s3"></div>
                     <div class="card-3d-side s2"></div>
                     <div class="card-3d-side s1"></div>
                     <div class="card-3d-face">
                       <div class="card-3d-glint"></div>
-                      <svg class="w-9 h-9 sm:w-11 sm:h-11 text-white drop-shadow-[0_4px_10px_rgba(23,18,74,0.55)]" fill="currentColor" viewBox="0 0 24 24">
+                      <svg class="w-9 h-9 sm:w-11 sm:h-11 text-white drop-shadow-[0_5px_12px_rgba(23,18,74,0.6)]" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 14.2L5 13.4v3.8L12 21l7-3.8v-3.8l-7 3.8z"></path>
                       </svg>
                     </div>
-                    
                   </div>
                 </button>
 
-                <!-- Card 5 (Bottom-Left): Cloud & Storage (Sapphire-Azure 3D Slab Overlapping Lower-Left Monolith) -->
                 <button
                   type="button"
                   data-filter-cat="cat-cloud"
                   aria-label="Cloud &amp; Storage"
-                  style="bottom: 18%; left: 17%; --tz: 46px; --rx: 28deg; --ry: 16deg; --rz: -20deg;"
-                  class="card-3d-unit mat-sapphire-azure float-3d-e w-[68px] h-[68px] sm:w-[88px] sm:h-[88px] z-30"
-                 data-badge="Cloud &amp; Storage">
+                  style="bottom: 18%; left: 17%; --tz: 48px; --rx: 28deg; --ry: 16deg; --rz: -20deg; --ex: -1.4px; --ey: 2px;"
+                  class="card-3d-unit mat-sapphire-azure float-3d-e w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] z-30"
+                  data-badge="Cloud &amp; Storage"
+                >
                   <div class="card-3d-inner">
                     <div class="card-3d-shadow"></div>
+                    <div class="card-3d-side s5"></div>
+                    <div class="card-3d-side s4"></div>
                     <div class="card-3d-side s3"></div>
                     <div class="card-3d-side s2"></div>
                     <div class="card-3d-side s1"></div>
                     <div class="card-3d-face">
                       <div class="card-3d-glint"></div>
-                      <svg class="w-9 h-9 sm:w-11 sm:h-11 text-white drop-shadow-[0_5px_12px_rgba(11,35,89,0.55)]" fill="currentColor" viewBox="0 0 24 24">
+                      <svg class="w-9 h-9 sm:w-11 sm:h-11 text-white drop-shadow-[0_6px_14px_rgba(11,35,89,0.6)]" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M19.35 10.04A7.49 7.49 0 0012 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 000 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"></path>
                       </svg>
                     </div>
-                    
                   </div>
                 </button>
 
-                <!-- Card 6 (Bottom-Right Foreground): AI & Copilots (Brushed Champagne-Gold 3D Slab with Sparkle) -->
                 <button
                   type="button"
                   data-filter-cat="cat-ai"
                   aria-label="AI Tools"
-                  style="bottom: 8%; right: 11%; --tz: 48px; --rx: 26deg; --ry: -18deg; --rz: -15deg;"
-                  class="card-3d-unit mat-champagne-gold float-3d-f w-[66px] h-[66px] sm:w-[84px] sm:h-[84px] z-30"
-                 data-badge="AI Copilots">
+                  style="bottom: 8%; right: 12%; --tz: 50px; --rx: 26deg; --ry: -18deg; --rz: -15deg; --ex: -1.2px; --ey: 2px;"
+                  class="card-3d-unit mat-champagne-gold float-3d-f w-[68px] h-[68px] sm:w-[86px] sm:h-[86px] z-30"
+                  data-badge="AI Copilots"
+                >
                   <div class="card-3d-inner">
                     <div class="card-3d-shadow"></div>
+                    <div class="card-3d-side s5"></div>
+                    <div class="card-3d-side s4"></div>
                     <div class="card-3d-side s3"></div>
                     <div class="card-3d-side s2"></div>
                     <div class="card-3d-side s1"></div>
                     <div class="card-3d-face">
                       <div class="card-3d-glint"></div>
-                      <svg class="w-8 h-8 sm:w-10 sm:h-10 text-[#4A3523] drop-shadow-[0_2px_3px_rgba(255,255,255,0.6)]" fill="currentColor" viewBox="0 0 24 24">
+                      <svg class="w-8 h-8 sm:w-10 sm:h-10 text-[#4A3523] drop-shadow-[0_2px_3px_rgba(255,255,255,0.65)]" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8L12 2zm6.5 13l1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3z"></path>
                       </svg>
                     </div>
-                    
                   </div>
                 </button>
 
-                <!-- Card 7 (Bottom-Center): Productivity & Media Hub (Titanium 3D Slab with Amethyst Play Badge) -->
                 <button
                   type="button"
                   data-filter-cat="cat-productivity"
                   aria-label="Productivity"
-                  style="bottom: 3%; left: 42%; --tz: 54px; --rx: 28deg; --ry: 10deg; --rz: 16deg;"
+                  style="bottom: 3%; left: 41%; --tz: 56px; --rx: 28deg; --ry: 10deg; --rz: 16deg; --ex: -1.2px; --ey: 2px;"
                   class="card-3d-unit mat-titanium-media float-3d-g w-[64px] h-[64px] sm:w-[82px] sm:h-[82px] z-30"
-                 data-badge="Productivity">
+                  data-badge="Productivity"
+                >
                   <div class="card-3d-inner">
                     <div class="card-3d-shadow"></div>
+                    <div class="card-3d-side s5"></div>
+                    <div class="card-3d-side s4"></div>
                     <div class="card-3d-side s3"></div>
                     <div class="card-3d-side s2"></div>
                     <div class="card-3d-side s1"></div>
                     <div class="card-3d-face">
                       <div class="card-3d-glint"></div>
-                      <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-[#9C88FF] via-[#7158E2] to-[#4B38A6] border border-white/35 shadow-[0_4px_12px_rgba(0,0,0,0.55)] flex items-center justify-center text-white">
+                      <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-[#9C88FF] via-[#7158E2] to-[#4B38A6] border border-white/35 shadow-[0_4px_12px_rgba(0,0,0,0.6)] flex items-center justify-center text-white">
                         <svg class="w-4 h-4 sm:w-5 sm:h-5 translate-x-0.5" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M6.5 5.5l8 4.5-8 4.5v-9z"></path>
                         </svg>
                       </div>
                     </div>
-                    
                   </div>
                 </button>
 
-                <!-- Card 8 (Lower-Right Midground): Obsidian Horology / Time-Saver 3D Slab (Matches Reference Right Edge) -->
                 <div
                   aria-hidden="true"
-                  style="bottom: 24%; right: 4%; --tz: 22px; --rx: 26deg; --ry: -20deg; --rz: -18deg;"
-                  class="card-3d-unit mat-obsidian-clock float-3d-c w-[56px] h-[56px] sm:w-[72px] sm:h-[72px] pointer-events-none z-20"
+                  style="bottom: 25%; right: 4%; --tz: 22px; --rx: 26deg; --ry: -20deg; --rz: -18deg; --ex: 1.2px; --ey: 2px;"
+                  class="card-3d-unit mat-obsidian-clock float-3d-c w-[56px] h-[56px] sm:w-[74px] sm:h-[74px] pointer-events-none z-20"
                 >
                   <div class="card-3d-inner">
                     <div class="card-3d-shadow"></div>
+                    <div class="card-3d-side s5"></div>
+                    <div class="card-3d-side s4"></div>
                     <div class="card-3d-side s3"></div>
                     <div class="card-3d-side s2"></div>
                     <div class="card-3d-side s1"></div>
                     <div class="card-3d-face">
                       <div class="card-3d-glint"></div>
-                      <svg class="w-7 h-7 sm:w-8 sm:h-8 text-white/85" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                      <svg class="w-7 h-7 sm:w-8 sm:h-8 text-white/90" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
                         <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-opacity="0.35"></circle>
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5v4.8l3.2 2.2"></path>
                       </svg>
@@ -1023,23 +1013,7 @@
               </div>
             </div>
 
-            <!-- Right Vertical Micro-Typography Rail (Matches Reference) -->
-            <div class="hidden xl:flex flex-col items-center gap-3 absolute -right-2 top-1/2 -translate-y-1/2 text-[10px] tracking-[0.28em] text-white/35 vertical-rail-text select-none">
-              <span>DIGITAL SUBSCRIPTIONS</span>
-              <span class="w-[1px] h-9 bg-white/15"></span>
-              <span>GLOBAL ACCESS</span>
-            </div>
-
-            <!-- Bottom-Right 01 — 04 Indicator (Matches Reference) -->
-            <div class="hidden sm:flex items-center gap-3 absolute bottom-0 right-2 text-xs text-white/75 select-none">
-              <span class="font-semibold text-white">01</span>
-              <span class="w-6 h-[1px] bg-white/25"></span>
-              <span class="text-white/45">04</span>
-              <button type="button" data-route="catalog" aria-label="Explore next collection" class="w-8 h-8 rounded-full border border-white/20 hover:border-orbit-champagne flex items-center justify-center text-white/80 hover:text-orbit-champagne transition-colors">
-                →
-              </button>
-            </div>
-          </div>
+            <div class="hidden xl:flex flex-col items-center gap-3 absolute -right-2 top-1/2 -translate-y-1/2 t
         </div>
       </div>
     </section>
